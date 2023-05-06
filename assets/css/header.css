@@ -1,25 +1,7 @@
-.top-bars p {
-    width: 25%;
-    display: inline-block;
+.top-bars{
+    background: #0E6E6A;
+    width: 100%;
     height: 5px;
-    float: left;    
-    padding: 0 2px;
-}
-.top-bars p span {
-    display: block;
-    height: 5px;
-}
-.top-bars p:nth-child(1) span {
-    background-color: #61b235;
-}
-.top-bars p:nth-child(2) span {
-    background-color: #388be0;
-}
-.top-bars p:nth-child(3) span {
-    background-color: #cf3827;
-}
-.top-bars p:nth-child(4) span {
-    background-color: #f2982d;
 }
 .site-brand {
     text-align: left;
@@ -72,6 +54,8 @@
     position: relative;
     display: inline-block;
     padding-bottom: 7px;
+    margin-bottom: 0;
+    cursor: pointer;
 }
 .top-header-title_2 {
     margin-top: 10px;
@@ -84,7 +68,12 @@
     position: absolute;
     bottom: 0;
     left: 0;
+    width: 0;
     background-color: #000;
+    transition: 0.3s;
+}
+.top-header-item h3:hover:after{
+    width: 100%;
 }
 .main-menu a{
     text-transform: uppercase;
@@ -92,18 +81,37 @@
     font-size: var(--font-13);
     font-family: var(--bold);
     transition: 0.3s;
-    margin-right: 20px;
     line-height: 40px;
 }
 .main-menu li > a{
     color: rgb(224, 224, 224);
-    border-bottom: 3px solid transparent;
     transition: none;
+    text-align: center;
 }
 .main-menu li:hover a, .main-menu .navbar-nav > li > a.active{
     color: rgb(224, 224, 224);
-    border-color: white;
     transition: none;
+}
+.main-menu li{
+    position: relative;
+    text-align: center;
+    margin: 0 10px;
+}
+.main-menu li a::after{
+    content: "";
+    width: 0;
+    height: 3px;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s;
+}
+.main-menu li:hover a::after{
+    width: 100%;
+}
+.main-menu li a.active::after{
+    width: 100%;
 }
 .main-menu .navbar-nav > li > a{
     color: white;

@@ -16,8 +16,8 @@
     --black: rgb(0, 0, 0);
     --white: rgb(247, 247, 247);
     --blue: #2331f1;
-    --primary: #184B71;
-    --secondary: #ff497c;
+    --primary: #21346e;
+    --secondary: #020202;
     --muted: #ededef;
 
     /* fonts  */
@@ -119,6 +119,12 @@ body{
 }
 .ls-2{
     letter-spacing: 2px;
+}
+.ls-1{
+    letter-spacing: 0.55px;
+}
+.text-justify{
+    text-align: justify;
 }
 .line {
     line-height: 1.7;
