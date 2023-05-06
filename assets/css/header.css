@@ -1,0 +1,230 @@
+.top-bars p {
+    width: 25%;
+    display: inline-block;
+    height: 5px;
+    float: left;    
+    padding: 0 2px;
+}
+.top-bars p span {
+    display: block;
+    height: 5px;
+}
+.top-bars p:nth-child(1) span {
+    background-color: #61b235;
+}
+.top-bars p:nth-child(2) span {
+    background-color: #388be0;
+}
+.top-bars p:nth-child(3) span {
+    background-color: #cf3827;
+}
+.top-bars p:nth-child(4) span {
+    background-color: #f2982d;
+}
+.site-brand {
+    text-align: left;
+    padding-left: 17%;
+}
+.site-brand .nav-brand img {
+    max-height: 80px;
+}
+.home-title {
+    padding: 15px;
+    color: #D32F2F;
+    text-transform: uppercase;
+    font-size: var(--font-20);
+    font-family: var(--medium);
+    margin: 0;
+    padding-bottom: 0;
+}
+
+.col-lg-4:nth-child(3) .top-header-item {
+    padding-left: 46%;
+}
+.col-lg-4:nth-child(3) .top-header-item {
+    padding-left: 80px;
+}
+.top-header-item {
+    margin-top: 10px;
+}
+.header-socials li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 27px;
+    /* opacity: 0.5; */
+}
+.header-socials li i, .footer-bottom .f-socials li i {
+    color: #000;
+    font-size: 16px;
+}
+.header-socials li:hover{
+    opacity: 0.5;
+}
+.top-header-item h3 {
+    margin-bottom: 12px;
+}
+
+.col-lg-4:nth-child(3) .top-header-item {
+    padding-left: 46%;
+}
+.top-header-item h3 {
+    font-size: 16px;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 7px;
+}
+.top-header-title_2 {
+    margin-top: 10px;
+}
+.top-header-item h3:after {
+    content: '';
+    display: block;
+    height: 1px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+}
+.main-menu a{
+    text-transform: uppercase;
+    color: white;
+    font-size: var(--font-13);
+    font-family: var(--bold);
+    transition: 0.3s;
+    margin-right: 20px;
+    line-height: 40px;
+}
+.main-menu li > a{
+    color: rgb(224, 224, 224);
+    border-bottom: 3px solid transparent;
+    transition: none;
+}
+.main-menu li:hover a, .main-menu .navbar-nav > li > a.active{
+    color: rgb(224, 224, 224);
+    border-color: white;
+    transition: none;
+}
+.main-menu .navbar-nav > li > a{
+    color: white;
+    padding: 5px;
+    line-height: 4;
+}
+.main-menu .submenu > li > a{
+    line-height: 2;
+}
+.main-menu a:hover{
+    color: rgb(224, 224, 224);
+}
+.nav-toggler{
+    position: absolute;
+    top: 30px;
+    left: 20px;
+}
+
+.sidebar{
+    background: white;
+    width: 250px;
+    position: absolute;
+    left: -250px;
+    top: 0;
+    transition: 0.4s;
+    z-index: 1040;
+}
+.sidebar .navbar-nav .submenu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-right: 10px;
+    transition: none;
+}
+
+.sidebar .navbar-nav .submenu .submenu-content{
+    padding-left: 30px;
+    display: none;
+    transition: none;
+}
+.sidebar .navbar-nav .submenu span{
+    transform: rotate(-90deg);
+}
+.sidebar .navbar-nav .submenu.active span{
+    transform: rotate(0deg);
+}
+.overlay-side{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    background: rgba(128, 128, 128, 0.281);
+    z-index: 1020;
+    cursor: pointer;
+    display: none;
+}
+.sidebar.open{
+    left: 0;
+}
+.sidebar li{
+    border-top: 1px solid var(--muted);
+    padding-left: 10px;
+    position: relative;
+}
+.main-menu li .submenu{
+    position: absolute;
+    display: none;
+    z-index: 1050;
+    background: white;
+    text-align: start;
+}
+.main-menu li:hover .submenu{
+    display: block;
+    min-width: 250px;
+    border-radius: 5px;
+    border: 1px solid var(--muted);
+}
+.main-menu li .submenu li a{
+    font-family: var(--regular);
+    color: black;
+    padding: 0;
+}
+.main-menu li .submenu li a span{
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s;
+}
+.main-menu li .submenu li a:hover span{
+    visibility: visible;
+    opacity: 1;
+    padding-right: 10px;
+    transition: 0.3s;
+}
+.main-menu li .submenu li a:hover{
+    color: red;
+}
+
+.fixed-scroll-bottom {
+    position: fixed;
+    right: 15px;
+    bottom: 12px;
+    margin-bottom: 0;
+    text-align: center;
+    z-index: 999;
+    display: none;
+}
+
+/* footer section  */
+.f-section-title{
+    position: relative;
+    padding: 15px 0;
+}
+.f-section-title::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 80px;
+    height: 1px;
+    background-color: #f15746;
+}
+/* footer section  */

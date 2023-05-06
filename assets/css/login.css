@@ -1,0 +1,12 @@
+.bg-login{
+    background: #0E6E6A;
+}
+.right-form-login{
+    border: 3px dashed rgb(206, 206, 206);
+}
+.login-title-sec{
+    border-bottom: 2px solid black;
+}
+.colon-none{
+    display: none;
+}

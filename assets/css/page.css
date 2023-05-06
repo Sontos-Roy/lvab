@@ -1,0 +1,21 @@
+.page-title{
+    position: relative;
+    line-height: 2;
+}
+.page-title::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 48%;
+    left: 48%;
+    width: auto;
+    height: 3px;
+    background-color: red;
+}
+.fancy-item{
+    position: relative;
+}
+.fancy-item .caption{
+    padding: 10px;
+    text-align: center;
+}
