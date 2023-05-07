@@ -87,7 +87,7 @@
 .main-menu li > a{
     color: rgb(224, 224, 224);
     transition: none;
-    text-align: center;
+    text-align: start;
 }
 .main-menu li:hover a, .main-menu .navbar-nav > li > a.active{
     color: rgb(224, 224, 224);
